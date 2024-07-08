@@ -1,15 +1,15 @@
 name: Ambient Sound Processing
 
 on:
-  # To run manually
-  # workflow_dispatch:
-  # push: 
-    # branches:
-     # - main
-     # - caching
+  To run manually
+  workflow_dispatch:
+  push: 
+    branches:
+     - main
+     - caching
   
-  schedule:
-   - cron: '0 22 * * *'
+  # schedule:
+   # - cron: '0 22 * * *'
     
 jobs:
   process:
@@ -46,7 +46,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
           commit_message: Commit to Github
-          file_pattern: 'ambient_sound_analysis/img/*.png'
+          file_pattern: 'ambient_sound_analysis/img/broadband.png'
   
     - name: Good Job
       run: |
