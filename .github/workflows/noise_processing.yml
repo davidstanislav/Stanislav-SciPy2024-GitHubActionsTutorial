@@ -1,8 +1,6 @@
 name: Ambient Sound Processing
 
 on:
-  To run manually
-  # workflow_dispatch:
   push: 
     branches:
      - main
