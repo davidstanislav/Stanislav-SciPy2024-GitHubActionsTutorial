@@ -3,6 +3,7 @@ name: Python Environment
 on:
   # To run manually
   workflow_dispatch
+  push
 
 jobs:
   setup:
@@ -18,3 +19,6 @@ jobs:
       run: |
         python -c "import scipy as sp; print('Scipy version: '+sp.__version__)"
         python -c "import matplotlib as mpl; print('Matplotlib version: '+mpl.__version__)"
+    - name: Good Job!
+      run: |
+        echo "you did it"
